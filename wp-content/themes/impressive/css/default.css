@@ -1,0 +1,964 @@
+@font-face {
+    font-family: 'MontserratAlternates-Bold';    
+    src: url('../fonts/MontserratAlternates-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MontserratAlternates-Bold.woff') format('woff'),
+        url('../fonts/MontserratAlternates-Bold.ttf') format('truetype'),
+        url('../fonts/MontserratAlternates-Bold.svg#MontserratAlternates-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{  
+    color:#212121;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color:#f8f8f8;	
+    font-size: 18px;
+}
+.impressive-container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;	
+}
+.padding-left{
+    padding-left: 0;
+}
+.padding-right{
+    padding-right: 0;	
+}
+.color-text{
+    color: #dba605;
+}
+a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;  
+    -webkit-transition: all 0.3s ease-in-out 0s;  
+}
+a:hover, a:focus, .social-icon li a:hover,.social-icon li a:focus, .scroll-header .social-icon li a:hover,.scroll-header .social-icon li a:focus,
+.footer-social-icon > ul li a:hover,.footer-social-icon > ul li a:focus, .our-work-list > ul > li > a:hover, .our-work-list > ul > li > a:focus, 
+.our-work-list  ul .active a, .copyright p > a:hover,.copyright p > a:focus, .breadcrumb-menubar > li > a:hover, 
+.main-sidebar .sidebar-widget ul li a:hover, .main-sidebar .sidebar-widget ul li a:focus, .comment-text a:hover,.comment-text a:focus{
+    color: #dba605;
+    text-decoration: none;
+    outline: none;
+}
+img{
+    max-width:100%;
+}
+.title{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.title > h2, .site-breadcumb > h1{
+    font-weight:bold;
+    margin: 0 0 15px;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    font-size: 34px;
+}
+.title > h2:before, .site-breadcumb > h1:before {
+    border-bottom: 2px solid #dba605;
+    bottom: 0px;
+    content: "";
+    display: block;
+    left: 50%;
+    margin-left: -35px;
+    position: absolute;
+    width: 75px;
+}
+.subtitle{
+    font-family: 'Dancing Script';
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight:bold;
+}
+.social-icon ul, 
+.our-work-list > ul, 
+.post-meta > ul, 
+.price-box > ul, 
+.footer-social-icon > ul, 
+.site-pagination ul{   
+    padding-left:0;
+    list-style: none outside none;
+    margin-bottom: 0;
+}
+.social-icon ul li, 
+.our-work-list > ul > li, 
+.post-meta > ul > li, 
+.footer-social-icon > ul > li, 
+.site-pagination ul li{
+    display: inline-block;
+    list-style: none outside none;
+}
+.site-btn{
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 35px;
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-family: "Josefin Sans",sans-serif;
+}
+.site-btn:hover, 
+.site-btn:focus, 
+.wpcf7-form .wpcf7-submit:hover, 
+.wpcf7-form .wpcf7-submit:focus{
+    border-color: #dba605;
+    color: #dba605;
+}
+.our-work-list > ul {
+    text-align: center;
+}
+.our-work-list > ul > li > a {
+    padding: 0 10px;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #181818;
+}
+.logo img,
+.footer-logo img {
+    height: auto;
+    max-width: 600px;
+}
+/************default CSS end**************/
+
+/**************************header start*********************/
+
+.scrolling-menubar{
+    clear: both;
+    float: left;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+}
+section {
+    clear: both;
+    display: inline-block;
+    width: 100%;      
+}
+/**************************menu-bar start*********************/
+.main-menu-ul ul{   
+    list-style: none outside none;    
+    padding-left: 0;
+    margin: 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+.main-menu-ul ul li{   
+    display: inline-block;
+    position: relative;
+}
+.main-menu-ul > ul > li > a {
+    display: block;
+    font-family: "Dancing Script";
+    font-size: 26px;   
+    line-height: 1;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    text-transform: capitalize;
+    font-weight:bold;
+}
+.main-menu-ul ul ul li a{
+    clear: both;
+    color: #a7a7a7;
+    display: block;
+    font-family: "Dancing Script";
+    font-size: 18px;  
+    line-height: 1;    
+    padding: 10px;
+    text-align: left;
+    text-transform: capitalize;
+    font-weight:bold;
+}
+.main-menu-ul ul ul li a:hover,
+.main-menu-ul ul ul li a:focus, 
+.scroll-menu-bar .main-menu-ul ul li  ul li a:hover,
+.scroll-menu-bar .main-menu-ul ul li ul li a:focus {    
+    color: #fff;
+}
+.main-menu-ul ul  .active  a, 
+.main-menu-ul  ul  li  a:hover, 
+.main-menu-ul ul  li  a:focus,
+.scroll-menu-bar .main-menu-ul ul  .active  a, 
+.scroll-menu-bar .main-menu-ul  ul  li  a:hover, 
+.scroll-menu-bar .main-menu-ul ul  li  a:focus{   
+    color: #dba605;
+}
+.main-menu-ul ul ul{
+    background-color:#202020;
+    opacity: 0.8;
+    text-align:center;   
+    opacity: 0;   
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #313131;
+    visibility: hidden;
+    position: absolute;	
+    z-index: 2;	      
+    min-width:200px;    
+}
+.main-menu-ul ul li:hover > ul{
+    opacity: 0.9;
+    visibility: visible;
+}
+.main-menu-ul ul li ul li:hover > ul{
+    opacity: 1;
+}
+.main-menu-ul ul li  ul ul{
+    margin-left: 0;
+}
+.main-menu-ul ul li ul ul {    
+    right: 100%;    
+    top: -1px;   
+}
+.main-menu-ul ul li ul li {
+    margin-left: 0;
+    width: 100%;	
+    border-bottom: 1px dashed;   
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.main-menu-ul ul li ul li:last-child {
+    border-bottom: medium none;
+}
+.res-nav-header .icon-bar{
+    background-color: #dba605;
+}
+/**************************menu-bar end*********************/
+.header_bg {    
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;   
+}
+.mask-overlay {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.impressive-header {
+    display: inline-block;
+    margin: 130px auto 120px;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+.logo{
+    margin: 0 0 50px;
+}
+.impressive-header .social-icon ul{
+    margin: 0 0 40px;
+}
+.social-icon li a, .footer-social-icon > ul li a {
+    color: #d3d3d3;
+    font-size: 28px;
+    margin: 5px 15px;
+    display: inline-block;
+}
+.searchform-wrap {
+    margin-bottom: 75px;
+}
+.searchform {
+    border-bottom: 1px solid #d3d3d3;
+    display: inline-block;
+    position: relative;
+}
+.searchform .icon-search:before {
+    content: "\f002";
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 25px;
+    font-style: normal;
+    color:#d3d3d3;
+}
+.searchform input{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    color: inherit;
+    font-family: 'Dancing Script';
+    font-size:20px;   
+    color: #d3d3d3;
+    margin: 0;
+    padding: 10px;
+    transition: width 0.7s ease 0s;
+    -webkit-transition: width 0.7s ease 0s;
+    font-weight:bold;
+    width: 85px;
+    outline: 0;
+}
+.searchform input:focus, .searchform .icon-search:focus {
+    width: 220px;  
+}
+.menu-bar{
+    display: inline-block;
+}
+.scroll-header {
+    background: none repeat scroll 0 0 #ffffff;    
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 1px 0 #eaeaea;  
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    z-index: 1;
+    vertical-align: middle;
+    margin-bottom: 50px;
+}
+.scroll-header .social-icon > ul {
+    text-align: right;
+}
+.scroll-header .social-icon li a{
+    margin: 5px 0 5px 20px;
+    color: #4c4c4c;
+    font-size: 22px;
+}
+.scroll-menu-bar{
+    padding: 0;
+    text-align: right;
+}
+.scroll-menu-bar .main-menu-ul > ul > li > a{
+    color: #181818;
+    font-size: 22px;
+}
+.logo-small > a{
+    color: #181818;
+    display: inline-block;
+    font-family: 'MontserratAlternates-Bold';
+    font-size: 28px;    
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+/**************************header end*********************/
+/**************************footer start*********************/
+.footer-bg{
+    background-image: url("../images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 80px 0 70px;
+    margin-top: 30px;
+}
+.footer-logo{
+    margin: 0 0 70px;
+}
+.footer-social-icon{
+    margin: 0 0 70px 0;
+}
+.copyright, .copyright p > a {
+    color: #fff;   
+}
+.copyright p{
+    font-family: "Dancing Script";
+    font-size: 22px;  
+    font-weight:bold;
+}
+/**************************footer end*********************/
+
+/**************************breadcrumb start*********************/
+.site-breadcumb{
+    text-align: center;
+    margin: 0 0 45px;
+}
+.breadcrumb-menubar{
+    padding: 0;
+    background: transparent;
+    margin: 0;
+}
+.breadcrumb-menubar > li{
+    font-family: "Dancing Script";
+    font-size: 22px;
+    color: #181818;
+    text-transform: capitalize;
+    font-weight:bold;
+}
+.breadcrumb-menubar > li > a, .breadcrumb-menubar .active, .breadcrumb-menubar > li + li:before{
+    color: #181818;
+}
+.site-pagination {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.site-pagination ul li a,.site-pagination ul li span {
+    border: 1px solid #272727;
+    border-radius: 1px;
+    color: #272727;
+    display: inline-block;
+    font-weight:bold;
+    font-size: 14px;
+    padding: 7px 13px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.site-pagination ul li a:hover, .site-pagination ul li .active {
+    border-color:  #dba605;
+    color:  #dba605;
+}
+/**************************breadcrumb end*********************/
+
+/**************************sidebar start*********************/
+.main-sidebar .sidebar-widget {    
+    display: inline-block;
+    margin-bottom: 30px;   
+    width: 100%;
+}
+.main-sidebar .search-form label {
+    margin: 0;
+    width: 100%;
+}
+.main-sidebar .search-form .screen-reader-text {
+    display: none;
+}
+.main-sidebar .search-form .search-field {
+    border: 1px solid #dddddd;
+    font-weight: normal;
+    padding: 7px 15px;
+    width: 100%;
+    outline: 0;
+    color: #2a2b2c;
+}
+.main-sidebar .sidebar-widget .widget-title {
+    border-bottom: 1px solid #dba605;
+    color: #dba605;
+    font-weight:bold;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 8px;
+    margin: 0 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main-sidebar .sidebar-widget ul {
+    list-style: outside none none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.main-sidebar .sidebar-widget .aouthr-name{
+    color: #272727;
+    font-weight:bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.main-sidebar .sidebar-widget .comment-date{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #2a2b2c;
+}
+.main-sidebar .comments-box ul li {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.main-sidebar .sidebar-widget ul li{
+    padding-bottom: 12px;
+    font-size: 15px;
+}
+.main-sidebar .sidebar-widget ul li ul {  
+    margin-top: 13px;
+    padding-left: 15px;
+}
+.main-sidebar .sidebar-widget li:last-child {
+    padding-bottom: 0;
+}
+.main-sidebar .comments-box ul li:last-child{
+    padding-bottom: 12px;
+}
+.main-sidebar .sidebar-widget ul li ul li:last-child {    
+    padding-bottom: 0;
+}
+.main-sidebar .sidebar-widget ul li a{
+    color: #2a2b2c;
+    text-transform: uppercase;
+}
+.main-sidebar .sidebar-widget ul li span{
+    padding-left: 5px;
+}
+/**************************sidebar end*********************/
+
+/**************************home-page start*********************/
+.about-us {
+    margin: 15px 0 50px;
+}
+.about-us-details{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.services-box{
+    margin-bottom: 45px;
+}
+.our-services {
+    display: inline-block;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.our-services .service-icon span {
+    font-size: 50px;
+    color: #5c5c5c;
+}
+.our-services .service-title{
+    font-size: 22px;   
+    font-weight:bold;
+    text-transform: uppercase;
+    color: #dba605;
+    margin-bottom: 20px;
+}
+.our-services .service-detail {
+    line-height: 1.8;
+    font-size: 18px;
+}
+.get-in-touch{
+    /*  background-image: url(../images/get-in-touch-bg.jpg) ; */
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;  
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle; 
+    margin-bottom: 65px;
+    margin-top: 20px
+}
+.get-in-touch-info, .purchase-now-info{
+    text-align: center;   
+    margin: 100px 0;
+    position: relative;
+}
+.get-in-touch-info ul,.get-in-touch-info ol{
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+.get-in-touch-info img {
+    display: block;
+    margin: 15px auto 0;
+    text-align: center;
+}
+.get-in-touch-info, .get-in-touch-info p{   
+    clear: both;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "Dancing Script";
+    font-size: 34px;
+    font-weight:bold;
+    width: 100%;
+}
+.get-in-touch-info .site-btn{
+    margin-top: 55px;
+    display: inline-block;
+}
+.get-in-touch-info  blockquote{
+    text-align: left;
+    font-size: 34px;
+    line-height: 1;
+}
+.get-in-touch .mask, .purchase-now .mask{
+    background: none repeat scroll 0 0 rgba(82, 57, 0, 0.60);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.work-title{
+    font-weight:bold;
+    position: relative;
+    font-size: 18px;
+    color: #181818;
+    text-transform: capitalize;   
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+}
+.work-title:before {
+    border-bottom: 2px solid rgb(219, 166, 5);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 50%;
+    margin-left: -35px;
+    position: absolute;
+    width: 75px;
+}
+.our-blog {
+    margin: 0 0 30px;
+}
+.our-blog .title{
+    margin-bottom: 10px;
+}
+
+.blog-gallery{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;   
+}
+.our-blog .blog-gallery img {
+    margin: 0 auto;   
+}
+
+.blog-gallery .post-meta{
+    margin-top: 10px;
+}
+
+.blog-gallery:nth-child(2n+1){
+    clear: both;
+}
+.our-blog-details {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+} 
+.post-meta ul li {
+    padding-right: 10px;
+    font-weight:bold;
+    font-size: 16px;
+    color: #181818;
+}
+.post-meta ul li a {
+    color: #dba605;   
+    text-transform: uppercase;
+}
+.post-meta ul li .date{
+    color: #181818;
+}
+.post-meta ul li span{
+    padding-left: 5px;
+    color: #dba605;
+}
+
+/**************************home-page end*********************/
+
+/**************************blog-page start*********************/
+.blog-box {
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    margin-bottom: 45px;
+    padding-bottom: 30px;   
+    width: 100%;
+}
+.blog-box .work-title{
+    padding: 0 0 15px;   
+}
+.blog-box .blog-image{
+    padding-bottom: 15px;
+}
+.blog-box .post-meta {
+    text-align: center;
+}
+.blog-box .our-blog-details ul {
+    margin-bottom: 20px;
+}
+.blog-box .blog-details {
+    line-height: 1.8;
+    margin: 0 0 20px 0;
+    text-align: justify;
+}
+.read-more {
+    text-align: center;
+    margin: 12px 0 7px;
+}
+.read-more .site-btn{
+    border: 1px solid #dba605;
+    color: #dba605;
+    font-size: 16px;
+    padding: 8px 27px;   
+}
+.read-more .site-btn:hover{
+    color: #272727;
+    border-color: #272727;
+}
+.site-pagination ul li {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+.blog-page .site-pagination{
+    margin-bottom: 50px;
+}
+/**************************blog-page end*********************/
+
+/**************************single-blog-page start*********************/
+.single-blog-page .blog-box{
+    padding-bottom: 10px;
+}
+.article-title > h2, .comment-reply-title{    
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    color:  #dba605;
+    margin: 20px 0;
+}
+.comments-article > ol {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0;
+    width: 100%;
+}
+.comment-body {
+    margin-bottom: 20px;
+    position: relative;
+}
+.comment-author {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 8px;
+}
+.comment-author, .comment-content {
+    padding-left: 50px;
+}
+.comment-author .says {
+    display: none;
+}
+.comment-author .avatar {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 34px;
+    left: 0;
+    padding: 2px;
+    position: absolute;
+    top:30px;
+    width: 34px;
+}
+.comment-list{
+    padding: 0;
+    list-style: outside none none;
+}
+.comment-list .children {
+    padding-left: 20px;
+    list-style: outside none none;
+    margin-bottom: 10px;
+}
+.comment-metadata {
+    display: inline-block;
+    padding-left: 5px;
+    margin-bottom: 8px;
+    width: auto;
+}
+.comment-body a{
+    color: #212121;
+}
+.comment-body .reply {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.comment-author .fn{
+    color: #212121;
+    font-weight: normal;
+}
+.comment-body a:hover {
+    color: #dba605;
+}
+.comment-metadata .reply a {
+    color: #212121;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+.comment-content{
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    color: #272727;
+    display: inline-block;
+    font-size: 15px;    
+    padding: 10px;
+    white-space: normal;
+    width: 94%;
+    margin-left: 50px;
+}
+.reply-box {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.comment-form p {
+    margin-bottom: 20px;
+}
+.comment-form label {
+    display: none;
+}
+.comment-form-author, .comment-form-email, .comment-form-url{
+    width: 32%;
+    float: left;   
+}
+.comment-form-comment {
+    clear: both;
+}
+.comment-form-email {
+    margin: auto 15px;
+}
+.comment-form .comment-form-author input, .comment-form .comment-form-email input, .comment-form-url  input{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
+    color: #6a6a6a;   
+    font-size: 13px;
+    padding: 10px;
+    width: 100%;
+    outline: 0;
+    text-transform: capitalize;
+}
+.comment-form .comment-form-comment > textarea{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
+    color: #6a6a6a;
+    font-size: 13px;
+    padding: 10px;
+    width: 100%;
+    resize: vertical; 
+    text-transform: capitalize;	
+    outline: 0;
+}
+.form-submit > input[type="submit"]{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 2px;
+    color: #000000;     
+    font-weight:bold;
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 8px 40px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+}
+.form-submit > input[type="submit"]:hover {
+    border-color: #dba605;
+    color: #dba605;
+}
+.comment-form-author {
+    padding-left: 0;
+}
+.comment-form-website{
+    padding-right: 0;
+}
+.wpcf7-form{
+    display: inline-block;
+    width: 100%;
+}
+.wpcf7-form p {
+    margin: 0;
+}
+.wpcf7-form-control-wrap input {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
+    color: #6a6a6a;
+    margin-bottom: 15px;
+    font-size: 13px;
+    padding: 10px;
+    outline: 0;
+    width: 100%;
+}
+.wpcf7-form-control-wrap textarea {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
+    color: #6a6a6a;
+    font-size: 13px;
+    padding: 10px;
+    width: 100%;
+    outline: 0;
+    resize: vertical;   
+}
+.wpcf7-form .wpcf7-submit {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 2px;
+    color: #000000;    
+    font-weight:bold;
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 8px 40px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+}
+/**************************single-blog-page end*********************/
+
+.contact-page{
+    margin-bottom: 60px;
+}
+.contact-info h3{
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #dba605;
+    font-family: "Dancing Script";
+    font-weight:bold;
+}
+.contact-form {
+    border-right: 1px solid #dadada;
+    padding-right: 100px;
+}
+.contact-info {
+    padding-left: 80px;
+}
+.contact-info > p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.contact-add ul{
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0;
+}
+.contact-add ul li {
+    color: #4a4a4a;
+    float: left;
+    padding: 5px 0;
+    font-size: 15px;    
+    width: 100%;
+    font-weight:bold;
+}
+.contact-add > ul > li > span {
+    float: right;
+    font-size: 16px;
+    padding: 1px 0;
+    text-transform: capitalize;
+    font-weight: normal;
+    width: 65%;
+}
+.contact-add > ul > li > p {
+	float: left;
+    margin: 0;
+    width: 27%;
+}
+.wpcf7-not-valid {
+    border: 1px solid #f00 !important;
+}
+.contact-form .wpcf7-form-control-wrap input{
+    margin-bottom: 25px;
+}
+.contact-form .wpcf7-form .wpcf7-submit{
+    margin-top: 35px;
+}
